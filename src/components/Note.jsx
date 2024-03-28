@@ -13,28 +13,28 @@ function Note() {
                     : "bg-spot-profile-pannel shadow-spot-def"
             } mx-4 py-5 px-4 rounded-lg`}
         >
-            <div className="flex flex-row justify-between items-center">
-                <h1 className=" font-medium text-lg ">Note to Visitors</h1>
+            <div className="flex flex-row items-center justify-between">
+                <h1 className="text-lg font-medium">Note to Visitors</h1>
                 <button
                     onClick={() => {
                         setIsNoteShowing((prev) => {
                             return !prev;
                         });
                     }}
-                    className=" font-semibold py-1 px-3 rounded-full border"
+                    className="rounded-full border px-3 py-1 font-semibold"
                 >
                     {IsNoteShowing ? `Hide ` : `Show `}
                     Note
                 </button>
             </div>
             {IsNoteShowing && (
-                <div className="w-[99%] pt-3 mx-auto">
+                <div className="mx-auto w-[99%] pt-3">
                     <p className="text-xl">
                         This Portfolio Website is Inspired by Spotify UI, with a
                         little bit of modification here and there so big credits
                         to them.
                     </p>
-                    <p className="text-xl pt-3">
+                    <p className="pt-3 text-xl">
                         Built using
                         <span className="font-semibold text-neutral-300">
                              {" Next.js Tailwind CSS"}
@@ -43,10 +43,10 @@ function Note() {
                         <span className="font-semibold text-neutral-300">
                              {" Zustand"}
                         </span>
-                        , Zustand may have been uncessary but i used it to get
+                        , Zustand may have been unecessary but i used it to get
                         an experience using it
                     </p>
-                    <p className="lg:hidden pt-3 text-xl">
+                    <p className="pt-3 text-xl lg:hidden">
                         PS. Better if viewed in Desktop
                     </p>
                 </div>
