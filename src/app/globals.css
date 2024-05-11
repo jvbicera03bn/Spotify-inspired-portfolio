@@ -6,89 +6,106 @@
 /* scroll transparent */
 
 * {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Custom Animation/Transition out Tailwind */
 
 .parent-on-hover:hover .display-child-hover {
-    top: 8.4375rem;
-    opacity: 1;
+  top: 8.4375rem;
+  opacity: 1;
 }
 
 
 
 /* ------------------------------ */
 .parent-on-hover-seemore:hover .display-child-seemore {
-    opacity: 1;
+  opacity: 1;
 }
 
 @layer components {
 
-    /* Reused Class */
-    .sort-btn {
-        @apply bg-spot-profile-pannel px-3 py-2 rounded-full text-sm font-medium hover:cursor-pointer;
-    }
-    .sort-btn.selected {
-        @apply bg-white text-black;
-    }
-    .landingpage-def-div-class {
-        @apply w-full snap-start scroll-mt-[5.5rem] px-5 flex-col flex gap-4
-    }
+  /* Reused Class */
+  .sort-btn {
+    @apply rounded-full bg-spot-profile-pannel px-3 py-2 text-sm font-medium hover:cursor-pointer;
+  }
 
-    /* Long Class */
-    .content-page-bg {
-        @apply h-[98vh] bg-local overflow-y-scroll overflow-x-hidden rounded-lg snap-y bg-gradient-to-b from-neutral-800 from-5% via-neutral-900 via-10% to-spot-black-bg to-100%
-    }
-    .carrousel-item {
-        @apply z-0 min-w-[10.0625rem] max-w-[11.655rem] relative p-3 flex flex-col gap-2 shadow-spot-def bg-spot-black-pannel rounded-md overflow-hidden transition ease-in duration-150
-    }
-    .carrousel-item:hover {
-        @apply bg-spot-black-pannel-hover
-    }
-    .seemore-carrousel-item {
-        @apply z-50 overflow-hidden absolute top-[60%] right-[10%] font-semibold rounded-full text-xs bg-green-700 px-2 py-1 opacity-0 display-child-hover shadow-lg
-    }
-    .social, .contacts {
-        @apply flex flex-col gap-5;
-    }
-    .porfile-info-sidebar {
-        @apply flex flex-col gap-2;
-    }
-    .porfile-info-sidebar li {
-        @apply flex flex-col text-base font-normal
-    }
-    .porfile-info-sidebar li a {
-        @apply hover:underline text-neutral-300 hover:text-neutral-50
-    }
-    .porfile-info-sidebar li h1 {
-        @apply text-lg font-medium
-    }
-    .profileInfoBtn {
-        @apply py-2 px-4 bg-green-700 rounded-2xl hover:cursor-pointer
-    }
-    /* Mobile Technologies Styles */
-    .mobileTechnologies ul {
-        @apply flex flex-col gap-2
-    }
-    .mobileTechnologies ul li {
-        @apply flex flex-col
-    }
-    .mobileTechnologies ul li h1 {
-        @apply text-lg font-medium text-center
-    }
-    .mobileTechnologies ul li div {
-        @apply flex flex-row gap-1 flex-wrap justify-center
-    }
-    .mobileTechnologies ul li div p {
-        @apply text-2xl flex flex-col items-center border rounded-lg py-1 shadow-spot-def min-w-[5.3125rem]
-    }
-    .mobileTechnologies ul li div p span {
-        @apply text-sm
-    }
+  .sort-btn.selected {
+    @apply bg-white text-black;
+  }
+
+  .landingpage-def-div-class {
+    @apply w-full snap-start scroll-mt-[5.5rem] px-5 flex-col flex gap-4
+  }
+
+  /* Long Class */
+  .content-page-bg {
+    @apply h-[98vh] bg-local overflow-y-scroll overflow-x-hidden rounded-lg snap-y bg-gradient-to-b from-neutral-800 from-5% via-neutral-900 via-10% to-spot-black-bg to-100%
+  }
+
+  .carrousel-item {
+    @apply z-0 min-w-[10.0625rem] max-w-[11.655rem] relative p-3 flex flex-col gap-2 shadow-spot-def bg-spot-black-pannel rounded-md overflow-hidden transition ease-in duration-150
+  }
+
+  .carrousel-item:hover {
+    @apply bg-spot-black-pannel-hover
+  }
+
+  .seemore-carrousel-item {
+    @apply z-50 overflow-hidden absolute top-[60%] right-[10%] font-semibold rounded-full text-xs bg-green-700 px-2 py-1 opacity-0 display-child-hover shadow-lg
+  }
+
+  .social, .contacts {
+    @apply flex flex-col gap-5;
+  }
+
+  .porfile-info-sidebar {
+    @apply flex flex-col gap-2;
+  }
+
+  .porfile-info-sidebar li {
+    @apply flex flex-col text-base font-normal
+  }
+
+  .porfile-info-sidebar li a {
+    @apply hover:underline text-neutral-300 hover:text-neutral-50
+  }
+
+  .porfile-info-sidebar li h1 {
+    @apply text-lg font-medium
+  }
+
+  .profileInfoBtn {
+    @apply py-2 px-4 bg-green-700 rounded-2xl hover:cursor-pointer
+  }
+
+  /* Mobile Technologies Styles */
+  .mobileTechnologies ul {
+    @apply flex flex-col gap-2
+  }
+
+  .mobileTechnologies ul li {
+    @apply flex flex-col
+  }
+
+  .mobileTechnologies ul li h1 {
+    @apply text-lg font-medium text-center
+  }
+
+  .mobileTechnologies ul li div {
+    @apply flex flex-row gap-1 flex-wrap justify-center
+  }
+
+  .mobileTechnologies ul li div p {
+    @apply text-2xl flex flex-col items-center border rounded-lg py-1 shadow-spot-def min-w-[5.3125rem]
+  }
+
+  .mobileTechnologies ul li div p span {
+    @apply text-sm
+  }
 }

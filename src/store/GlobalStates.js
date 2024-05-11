@@ -176,21 +176,31 @@ export const useGlobalState = create((set) => ({
     experiences: [
         {
             name: "Freelance Programmer Tutor",
-            description: "2019-2022",
+            description:
+                "2019 - 2022: While i was studying i was working as a tutor for the lower and my fellow classmates how to code for their projects.",
             seeMoreStatus: "true",
             imgSrc: "/tutor.png",
         },
         {
             name: "Freelance IT Technician",
-            description: "2017-2022",
+            description:
+                "2017 - 2022: I also worked as an IT Technician for our neighborhood and my fellow classmates to help them with their hardware needs.",
             seeMoreStatus: "true",
             imgSrc: "/tech.png",
         },
         {
             name: "Website Developer",
-            description: "At Retailgate Techno.. Jan 2023 - May 2023",
+            description:
+                "Jan 2023 - May 2023: At Retailgate Technology this is where my skills in web development skyrocketed since i was able to work on multiple projects and also appply my already gains skills in web development to real world projects.",
             seeMoreStatus: "true",
             imgSrc: "/retailgate.png",
+        },
+        {
+            name: "Software Engineer",
+            description:
+                "Jun 2022 - Current: In my current role, I develop Flask-based Web API AI to optimize machine learning algorithms, leading frontend development with Next.js and Tailwind CSS, and backend development with Node.js and TypeScript for our company's flagship product website. Additionally, I design database schema and system architecture for scalability, collaborate cross-functionally to align development with business objectives, conduct code reviews, testing, and security implementations to uphold quality standards, mentor junior developers for team growth, and manage version control in collaboration with an On-the-Job Trainee for seamless collaboration and efficient change tracking.",
+            seeMoreStatus: "true",
+            imgSrc: "/linoflap.png",
         },
     ],
 }));

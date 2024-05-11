@@ -18,10 +18,10 @@ import {
 import { GiBearFace } from "react-icons/gi";
 import { AiFillHtml5 } from "react-icons/ai";
 
-function MobileTechnologies() {
+/* function MobileTechnologies() {
     return (
-        <div className=" flex lg:hidden flex-col bg-spot-profile-pannel mx-4 py-5 px-4 rounded-lg shadow-spot-def">
-            <h1 className="font-semibold text-xl pb-3 text-center">
+        <div className="mx-4 flex flex-col rounded-lg bg-spot-profile-pannel px-4 py-5 shadow-spot-def lg:hidden">
+            <h1 className="pb-3 text-center text-xl font-semibold">
                 Technologies
             </h1>
             <div className="mobileTechnologies">
@@ -118,6 +118,71 @@ function MobileTechnologies() {
             </div>
         </div>
     );
-}
+} */
+function MobileTechnologies() {
+    const technologies = [
+        {
+            category: "Languages",
+            items: [
+                { icon: <RiJavascriptFill />, name: "JavaScript" },
+                { icon: <BiSolidFileCss />, name: "CSS" },
+                { icon: <AiFillHtml5 />, name: "HTML5" },
+                { icon: <FaPhp />, name: "PHP" },
+                { icon: <BiLogoPython />, name: "Python" },
+                { icon: <FaJava />, name: "Java" },
+            ],
+        },
+        {
+            category: "Frameworks/Libraries",
+            items: [
+                { icon: <FaReact />, name: "React.js" },
+                { icon: <BiLogoVuejs />, name: "Vue.js" },
+                { icon: <SiExpress />, name: "Express.js" },
+                { icon: <SiCodeigniter />, name: "CodeIgniter" },
+                { icon: <SiNextdotjs />, name: "Next.js" },
+                { icon: <SiTailwindcss />, name: "Tailwind" },
+                { icon: <GiBearFace />, name: "Zustand" },
+            ],
+        },
+        {
+            category: "Database",
+            items: [
+                { icon: <BiLogoMongodb />, name: "MongoDB" },
+                { icon: <SiMysql />, name: "MySQL" },
+            ],
+        },
+        {
+            category: "Others",
+            items: [
+                { icon: <SiNodedotjs />, name: "Node.js" },
+                { icon: <SiPostman />, name: "Postman" },
+            ],
+        },
+    ];
 
+    return (
+        <div className="mx-4 flex flex-col rounded-lg bg-spot-profile-pannel px-4 py-5 shadow-spot-def lg:hidden">
+            <h1 className="pb-3 text-center text-xl font-semibold">
+                Technologies
+            </h1>
+            <div className="mobileTechnologies">
+                <ul>
+                    {technologies.map((category) => (
+                        <li key={category.category}>
+                            <h1>{category.category}</h1>
+                            <div>
+                                {category.items.map((item) => (
+                                    <p key={item.name}>
+                                        {item.icon}
+                                        <span>{item.name}</span>
+                                    </p>
+                                ))}
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+}
 export default MobileTechnologies;

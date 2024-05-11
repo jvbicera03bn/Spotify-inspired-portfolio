@@ -11,8 +11,7 @@ export default function Home() {
     return (
         <ContentPage displayName={"Jack Vincent Bicera"}>
             <div
-                className="flex flex-col p-5 gap-5 relative
-            bg-profile-cover bg-profile-cover-pos h-[45vh] bg-cover bg-fixed snap-start"
+                className="relative flex h-[45vh] snap-start flex-col gap-5 bg-profile-cover bg-cover bg-fixed bg-profile-cover-pos p-5"
             >
                 <div className="absolute bottom-10">
                     <VerifiedOccupation />
@@ -33,15 +32,15 @@ export default function Home() {
                     }
                 />
                 <Carrousel
-                    tooltipStat={false}
+                    tooltipStat={true}
                     seeMoreOption={false}
                     carrouselName={"Experiences"}
                     isBox={false}
                     carrouselContent={experiences}
-                    CarrouselDesc={"My Experiences so far"}
+                    CarrouselDesc={"My Current Experiences"}
                 />
                 <div className="landingpage-def-div-class h-[430px]">
-                    <h1 className="font-bold text-2xl">About</h1>
+                    <h1 className="text-2xl font-bold">About</h1>
                     <AboutMe isBig={true} />
                 </div>
                 <Carrousel

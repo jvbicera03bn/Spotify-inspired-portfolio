@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import CarrouselItem from "./CarrouselItem";
-import { XyzTransition } from "@animxyz/react";
 
 function Carrousel({
     carrouselName,
@@ -24,7 +23,7 @@ function Carrousel({
         <div className="landingpage-def-div-class parent-on-hover-seemore">
             <div id="Header " className="flex flex-col">
                 <div className="flex flex-row gap-2">
-                    <h1 className="font-bold text-2xl align-middle">
+                    <h1 className="align-middle text-2xl font-bold">
                         {carrouselName}
                     </h1>
                     {seeMoreOption && (
@@ -40,7 +39,7 @@ function Carrousel({
                         </button>
                     )}
                 </div>
-                <p className="text-stone-400 text-base">| {CarrouselDesc}</p>
+                <p className="text-base text-stone-400">| {CarrouselDesc}</p>
             </div>
             <div
                 ref={thisDiv}
@@ -56,7 +55,13 @@ function Carrousel({
                     return (
                         <div key={key}>
                             <Tooltip
-                                className={`absolute z-50`}
+                                style={{
+                                    textAlign: "center",
+                                    width: "570px",
+                                    backgroundColor: "#16A34A",
+                                    opacity: "100%",
+                                }}
+                                className={`absolute z-50 `}
                                 id={`tooltip${item.name}`}
                             />
                             <CarrouselItem

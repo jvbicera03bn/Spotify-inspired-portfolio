@@ -36,8 +36,10 @@ function CarrouselItem({
                 `}
             />
 
-            <h1 className="sm:text-xs lg:text-base font-bold truncate ">{realImageName}</h1>
-            <p className="w-full h-10 text-sm text-neutral-500 font-medium line-clamp-2">
+            <h1 className="truncate font-bold sm:text-xs lg:text-base">
+                {realImageName}
+            </h1>
+            <p className="line-clamp-2 h-10 w-full text-sm font-medium text-neutral-500">
                 {realImageDesc}
             </p>
             {/* <span className="seemore-carrousel-item transition-all duration-500">

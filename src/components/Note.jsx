@@ -37,11 +37,11 @@ function Note() {
                     <p className="pt-3 text-xl">
                         Built using
                         <span className="font-semibold text-neutral-300">
-                             {" Next.js Tailwind CSS"}
+                            {" Next.js Tailwind CSS"}
                         </span>
-                         and 
+                        and
                         <span className="font-semibold text-neutral-300">
-                             {" Zustand"}
+                            {" Zustand"}
                         </span>
                         , Zustand may have been unecessary but i used it to get
                         an experience using it
